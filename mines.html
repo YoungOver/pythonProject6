@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines - Fake1Win</title>
+    <link rel="stylesheet" href="mines.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>💣 Mines</h1>
+        <div id="selection">
+            <label for="traps">Выберите ловушек:</label>
+            <select id="traps">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="7">7</option>
+            </select>
+            <button id="continue">Продолжить</button>
+        </div>
+        <div id="game" class="hidden">
+            <div id="field"></div>
+            <button id="signal">Получить сигнал</button>
+        </div>
+    </div>
+    <script src="mines.js"></script>
+</body>
+</html>
