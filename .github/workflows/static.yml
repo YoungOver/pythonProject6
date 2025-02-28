@@ -6,9 +6,12 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+      - name: Checkout code
+        uses: actions/checkout@v4  # Обновили до v4
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.6.8  # Обновили до последней версии
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # Используем встроенный токен
           branch: gh-pages
           folder: webapp
+          clean: true  # Очищает старую версию gh-pages
