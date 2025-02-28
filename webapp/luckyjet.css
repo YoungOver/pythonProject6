@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1c2526, #2e3839);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+#jet {
+    width: 100px;
+    margin: 20px auto;
+    transition: transform 1s ease;
+}
+
+#jet.flying {
+    transform: translateY(-50px) rotate(10deg);
+}
+
+#multiplier {
+    font-size: 4em;
+    color: #ffd700;
+    margin: 20px 0;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background-color: #3a4445;
+    color: #fff;
+    border: 1px solid #ffd700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4a5556;
+    transform: scale(1.05);
+}
