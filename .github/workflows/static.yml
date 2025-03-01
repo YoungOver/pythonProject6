@@ -11,4 +11,4 @@ jobs:
         with:
           branch: gh-pages
           folder: webapp
-          clean: true #2
+          clean: true
